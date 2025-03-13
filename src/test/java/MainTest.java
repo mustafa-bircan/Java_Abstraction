@@ -39,7 +39,7 @@ public class MainTest {
         assertEquals(bread.getPrice(), 10);
         assertEquals(bread.getDescription(), "Test Bread");
 
-        assertEquals(chocolate.getType(), "Test");
+        assertEquals(chocolate.getType(), "Chocolate");
         assertEquals(chocolate.getPrice(), 10);
         assertEquals(chocolate.getDescription(), "Test Chocolate");
     }
