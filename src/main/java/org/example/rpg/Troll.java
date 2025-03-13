@@ -12,11 +12,11 @@ public class Troll extends Monster implements Bleedable,Poisonable {
 
     @Override
     public double attack() {
-        return getDamage() * 0.3;
+        return getDamage() + bleed() + poison();
     }
 
     @Override
     public double poison() {
-        return getDamage() + bleed() + poison();
+        return getDamage() * 0.3;
     }
 }
