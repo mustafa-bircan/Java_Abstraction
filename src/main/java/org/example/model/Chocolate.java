@@ -1,21 +1,22 @@
 package org.example.model;
 
 public class Chocolate extends ProductForSale {
-    private final boolean isDiet;
+    private final int cocoaPercentage;
 
-    public Chocolate(String type, double price, String description, boolean isDiet) {
-        super(type, price, description);
-        this.isDiet = isDiet;
+    public Chocolate(double price, String description, int cocoaPercentage) {
+        super("Chocolate", price, description);
+        this.cocoaPercentage = cocoaPercentage;
     }
 
-    public boolean isDiet(){
-        return isDiet;
+    public int getCocoaPercentage() {
+        return cocoaPercentage;
     }
 
     @Override
     public void showDetails() {
-        System.out.println("Coke - " + getDescription());
+        System.out.println("Chocolate - " + getDescription());
         System.out.println("Price: " + getPrice() + " USD");
-        System.out.println("Diet: " + (isDiet ? "Yes" : "No"));
+        System.out.println("Cocoa Percentage: " + cocoaPercentage + "%");
     }
 }
+
